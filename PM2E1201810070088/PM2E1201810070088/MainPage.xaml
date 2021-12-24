@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="PM2E1201810070088.MainPage">
+
+    <StackLayout>
+        <Label Text="Control de Casa" HorizontalOptions="Center" />
+        <Image Source="logo.png" HorizontalOptions="Center" />
+
+        <Label Text="" />
+        <Label Text="" />
+        <Entry Placeholder="Login Usuario" x:Name="login" />
+        <Entry Placeholder="Contraseña" x:Name="pass" />
+
+        <Label Text="" />
+        <Button Text="Ingresar" x:Name="ingresar" Clicked="ingresar_Clicked" />
+        <Button Text="Registrarse" x:Name="registrar" Clicked="registrar_Clicked" />
+    </StackLayout>
+
+</ContentPage>

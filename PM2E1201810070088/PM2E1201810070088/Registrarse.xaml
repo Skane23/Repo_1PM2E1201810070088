@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E1201810070088.Registrarse">
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="logo.png" HeightRequest="60" WidthRequest="60" />
+
+            
+                <Label FontSize="13" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Latitud: "/>
+                                <Span x:Name="lbllatitud"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label FontSize="13" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Longitud: "/>
+                                <Span x:Name="lbllongitud" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Entry Placeholder="Describa la ubicacion casa" x:Name="describir" MaxLength="80" />
+                <Entry Placeholder="Direccion exacta casa" x:Name="direccion" MaxLength="80" />
+                <Label Text="Imagen" />
+
+                <Image Source="logo.png" x:Name="imagen" HorizontalOptions="Center" HeightRequest="70" WidthRequest="60" />
+
+                <Button Text="Cargar Imagen" x:Name="btncargarimg" Clicked="btncargarimg_Clicked" />
+                <Label Text="" />
+                <Button Text="Registrarse" x:Name="btnRegis" Clicked="btnRegis_Clicked" />
+                <Button Text="Listado Casas" x:Name="btnList" Clicked="btnList_Clicked" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+
+</ContentPage>
